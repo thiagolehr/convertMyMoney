@@ -3,6 +3,8 @@ const { readFileSync } = require('fs')
 const app = express()
 const path = require('path')
 
+const port = process.env.PORT || 3000
+
 const {
     convert,
     toMoney
@@ -34,7 +36,7 @@ app.get('/cotacao', (req, res) => {
 
 })
 
-app.listen(3000, err =>  {
+app.listen(port, err =>  {
     if(err){
         console.log('Not possible to launch')
     }else{
