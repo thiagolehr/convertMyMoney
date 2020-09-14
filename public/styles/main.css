@@ -1,0 +1,74 @@
+:root{
+    font-size: 60%;
+    /*9,6px
+    1.7rem = 16px
+    2.5rem = 24px
+    */
+}
+html, 
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*escolher se quer controlar pela caixa ou
+    margin, enfim*/
+}
+body {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+}
+#container{
+    width: 90vw;
+    max-width: 700px;
+}
+.logo-container{
+    text-align: center;
+    
+}
+.logo-container img{
+    height: 5rem;
+    margin-top: 3.2rem;
+}
+.form-container input{
+    background: #fdfdfd;
+    text-align: center;
+}
+.form-container input, button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    height: 4rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.form-container .form1{
+    margin-top: 7rem;
+}
+.form-container button{
+    width: 15rem;
+    height: 3rem;
+    background-color: 97FFAE;
+    border-radius: 0.8rem;
+}
+.form-container button:hover{
+    background-color: rgb(3, 109, 3);
+}
+.result{
+    padding: 2rem;
+    margin: 5rem auto;
+    border: 1px solid black;
+    background: #fdfdfd;
+    width: 30rem;
+}
